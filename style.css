@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Flame: #ea5d29;
+    --Sunglow_Smoke: #f6d146;
+    --Sail: #b4e1ff;
+    --Armadilo: #4a4a4a;
+    --Aluminium: #999999;
+    --Medium_Sea_Green: #30bb64;
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.Main_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    border: 2px solid red;
+    height: 220px;
+    margin: 11px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head {
+    color: var(--Aluminium);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Revenue {
+    border: 2px solid var(--Flame);
+    width: 350px;
+}
+
+.Orders {
+    border: 2px solid var(--Sunglow_Smoke);
+    width: 280px;
+}
+
+.Customers {
+    border: 2px solid var(--Sail);
+    width: 280px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    font-size: 62px;
+    position: relative;
+    left: 20px;
+}
+
+.bottom_part {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Aluminium);
+}
+
+.icon {
+    height: 22px;
+    width: 8px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Orders {
+        width: 350px;
+    }
+
+    .Customers {
+        width: 350px;
+    }
+}
